@@ -167,23 +167,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2026-01-23 15:00:00" itemprop="dateCreated datePublished" datetime="2026-01-23T15:00:00+08:00">2026-01-23</time>
+              <time title="创建时间：2026-01-23 15:00:00 / 修改时间：09:33:10" itemprop="dateCreated datePublished" datetime="2026-01-23T15:00:00+08:00">2026-01-23</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-22 17:29:16" itemprop="dateModified" datetime="2026-01-22T17:29:16+08:00">2026-01-22</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">技术笔记</span></a>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
                 </span>
             </span>
 
@@ -198,16 +192,62 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="一、为什么选择Hexo写博客？"><a href="#一、为什么选择Hexo写博客？" class="headerlink" title="一、为什么选择Hexo写博客？"></a>一、为什么选择Hexo写博客？</h1><p>Hexo是静态博客框架，优点很明显：</p>
+          <pre><code>Hexo是静态博客框架，用Hexo部署网页，优点很明显：
+</code></pre>
 <ul>
 <li>加载速度快（纯静态文件）</li>
 <li>免费部署到GitHub Pages</li>
 <li>支持Markdown写文章，排版方便</li>
 </ul>
-<h1 id="二、写文章的常用操作"><a href="#二、写文章的常用操作" class="headerlink" title="二、写文章的常用操作"></a>二、写文章的常用操作</h1><h2 id="1-新建文章"><a href="#1-新建文章" class="headerlink" title="1. 新建文章"></a>1. 新建文章</h2><p>在Git Bash中执行命令：</p>
-<pre><code class="language-bash">hexo new &quot;文章标题&quot;  # 比如 hexo new &quot;我的旅行日记&quot;
+<h1 id="一级标题（文章大标题）"><a href="#一级标题（文章大标题）" class="headerlink" title="一级标题（文章大标题）"></a>一级标题（文章大标题）</h1><h2 id="二级标题（章节标题）"><a href="#二级标题（章节标题）" class="headerlink" title="二级标题（章节标题）"></a>二级标题（章节标题）</h2><h3 id="三级标题（小节标题）"><a href="#三级标题（小节标题）" class="headerlink" title="三级标题（小节标题）"></a>三级标题（小节标题）</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><pre><code>正文：最多6级标题
+</code></pre>
+<p>正文：最多6级标题</p>
+<p><strong>加粗文本</strong><br><em>斜体文本</em><br><em><strong>加粗+斜体</strong></em><br><del>删除线文本</del></p>
+<p><strong>无序列表</strong></p>
+<ul>
+<li>列表项1</li>
+<li>列表项2<ul>
+<li>子列表项2.1</li>
+<li>子列表项2.2</li>
+</ul>
+</li>
+</ul>
+<p><strong>有序列表</strong></p>
+<ol>
+<li>第一项</li>
+<li>第二项<ol>
+<li>子项2.1</li>
+<li>子项2.2</li>
+</ol>
+</li>
+</ol>
+<p><strong>图片</strong><br><img src="/%E6%88%91%E7%9A%84%E9%A6%96%E6%B5%8B-1/%E9%A3%8E%E6%99%AF1.jpg" alt="海边风景">   # <img src="/%E6%96%87%E7%AB%A0%E6%96%87%E4%BB%B6%E5%90%8D/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%90%8D.jpg" alt="图片描述"></p>
+<p><strong>外部链接</strong><br><a target="_blank" rel="noopener" href="https://hexo.io/">Hexo官网</a></p>
+<p><strong>内部链接（跳转到自己的文章）</strong><br><a href="!--swig%EF%BF%BC0--">第一篇文章</a>  # 示例：跳转到“Hello World.md”，格式：<a href="!--swig%EF%BF%BC1--">我的另一篇文章</a></p>
+<p><strong>代码块</strong><br><strong>单行代码</strong><br><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<p><strong>多行代码（指定语言，自动高亮）</strong></p>
+<pre><code class="language-python">print(&quot;Hello Hexo&quot;)
+a = 123
 
-![图片](我的首测-1/风景1.jpg)
+
+**引用**
+```markdown
+&gt; 这是一段引用文本
+&gt; 可以换行
+
+
+
+**分割线**
+---
+
+
+**表格**
+
+| 列1标题 | 列2标题 | 列3标题 |
+|---------|---------|---------|
+| 内容1   | 内容2   | 内容3   |
+| 内容4   | 内容5   | 内容6   |
+
 </code></pre>
 
       
@@ -259,7 +299,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2026-01-23 08:12:22" itemprop="dateModified" datetime="2026-01-23T08:12:22+08:00">2026-01-23</time>
+                <time title="修改时间：2026-01-23 08:38:01" itemprop="dateModified" datetime="2026-01-23T08:38:01+08:00">2026-01-23</time>
               </span>
 
           
@@ -277,8 +317,7 @@
 <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创件新信息"><a href="#创件新信息" class="headerlink" title="创件新信息"></a>创件新信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<p>###运行服务器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
@@ -378,7 +417,7 @@
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
